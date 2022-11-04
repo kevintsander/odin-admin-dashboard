@@ -1,0 +1,114 @@
+:root {
+    --main-color: #3730a3;
+    --main-color-text: #f8f8ed;
+    --card-bg: #f8f8ed;
+    --content-bg: #eeeefc;
+    --secondary-color: #30a371;
+
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas:
+        "nav header"
+        "nav content";
+
+}
+
+nav {
+    padding: 1rem;
+    color: var(--main-color-text);
+    background-color: var(--main-color);
+
+    grid-area: nav;
+}
+
+header {
+    padding: 1rem;
+
+    background-color: var(--card-bg);
+    grid-area: header;
+
+    display: grid;
+    grid-template-columns: 1fr min-content;
+    grid-template-areas:
+        "search user"
+        "welcome actions";
+    align-items: center;
+}
+
+.search-bar {
+    grid-area: search;
+    justify-self: start;
+}
+
+.user-bar {
+    grid-area: user;
+
+    display: flex;
+    justify-self: end;
+}
+
+.user-nav-name {
+    white-space: nowrap;
+    justify-self: end;
+}
+
+.welcome-bar {
+    grid-area: welcome;
+    justify-self: start;
+}
+
+.actions-bar {
+    grid-area: actions;
+}
+
+.actions-bar ul {
+    display: flex;
+}
+
+.content {
+    padding: 1rem;
+    background-color: var(--content-bg);
+
+    grid-area: content;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "projects announcements"
+        "projects trending";
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.project-card {
+    background-color: var(--card-bg);
+
+    display: grid;
+    grid-template-rows: min-content auto min-content;
+}
+
+.project-card-actions {
+    display: flex;
+}
+
+.announcements {
+    grid-area: announcements;
+}
+
+.trending {
+    grid-area: trending;
+}

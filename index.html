@@ -6,41 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-        <div class="top-bar">
-            <div class="top-search-bar">
-                <img id="search-icon">
-                <input type="search">
-            </div>
-            <div class="top-user-bar">
-                <button title="alerts" class="top-user-button"></button>
-                <img class="small-user-icon">
-                <span class="small-user-name">Kevin Sander</span>
-            </div>
+        <div class="search-bar">
+            <img id="search-icon">
+            <input type="search">
         </div>
         <div class="welcome-bar">
             <div class="welcome">
                 <img class="welcome-user-icon">
                 <p class="welcome-intro">Hi there,</p>
-                <p class="welcome-user-name"></p>
+                <p class="welcome-user-name">Kevin Sander (@kevintsander)</p>
             </div>
-            <div class="actions"></div>
         </div>
-        <div class="user-nav-bar">
+        <div class="user-bar">
             <input id="alerts" type="image" class="user-nav-button" alt="Alerts">
             <input id="profile" type="image" class="user-nav-button" alt="Profile">
             <span class="user-nav-name">Kevin Sander</span>
-            <div class="actions-bar">
-                <ul>
-                    <li>New</li>
-                    <li>Upload</li>
-                    <li>Share</li>
-                </ul>
-            </div>
+        </div>
+        <div class="actions-bar">
+            <ul>
+                <li>New</li>
+                <li>Upload</li>
+                <li>Share</li>
+            </ul>
+        </div>
     </header>
     <nav>
         <div class="nav-header">
@@ -65,7 +62,7 @@
             </ul>
         </div>
     </nav>
-    <div class="content">
+    <main class="content">
         <div class="projects">
             <h2>Your Projects</h2>
             <div class="project-cards">
@@ -177,7 +174,7 @@
                 </div>
             </div>
         </div>
-    </div>
+        </div>
 
 </body>
 
