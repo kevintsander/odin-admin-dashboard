@@ -13,22 +13,21 @@
 </head>
 
 <body>
-
-    <header>
+    <header class="shadowed-item">
         <div class="search-bar">
-            <img id="search-icon">
+            <img id="search-icon" src="./images/magnify.svg">
             <input type="search">
         </div>
         <div class="welcome-bar">
+            <img class="welcome-user-icon" src="./images/user/kevin-neon-sign.webp">
             <div class="welcome">
-                <img class="welcome-user-icon">
                 <p class="welcome-intro">Hi there,</p>
                 <p class="welcome-user-name">Kevin Sander (@kevintsander)</p>
             </div>
         </div>
         <div class="user-bar">
-            <input id="alerts" type="image" class="user-nav-button" alt="Alerts">
-            <input id="profile" type="image" class="user-nav-button" alt="Profile">
+            <input id="alerts" type="image" src="./images/bell-ring-outline.svg" class="user-nav-button" alt="Alerts">
+            <input id="profile" type="image" src="./images/user/kevin-neon-sign.webp" user-nav-button" alt="Profile">
             <span class="user-nav-name">Kevin Sander</span>
         </div>
         <div class="actions-bar">
@@ -39,26 +38,26 @@
             </ul>
         </div>
     </header>
-    <nav>
+    <nav class="shadowed-item">
         <div class="nav-header">
-            <img id="dashboard-icon">
+            <img id="dashboard-icon" src="./images/view-dashboard.svg">
             <h1>Dashboard</h1>
         </div>
-        <div class="nav-main">
+        <div class="nav-links">
             <ul>
-                <li class="nav-item">Home</li>
-                <li class="nav-item">Profile</li>
-                <li class="nav-item">Messages</li>
-                <li class="nav-item">History</li>
-                <li class="nav-item">Tasks</li>
-                <li class="nav-item">Communities</li>
+                <li class="nav-item"><img class="nav-image" src="./images/home.svg">Home</li>
+                <li class="nav-item"><img class="nav-image" src="./images/card-account-details-outline.svg">Profile</li>
+                <li class="nav-item"><img class="nav-image" src="./images/message.svg">Messages</li>
+                <li class="nav-item"><img class="nav-image" src="./images/clock.svg">History</li>
+                <li class="nav-item"><img class="nav-image" src="./images/note-multiple.svg">Tasks</li>
+                <li class="nav-item"><img class="nav-image" src="./images/account-group.svg">Communities</li>
             </ul>
         </div>
-        <div class="nav-settings">
+        <div class="nav-links">
             <ul>
-                <li class="nav-item">Settings</li>
-                <li class="nav-item">Support</li>
-                <li class="nav-item">Privacy</li>
+                <li class="nav-item"><img class="nav-image" src="./images/cog.svg">Settings</li>
+                <li class="nav-item"><img class="nav-image" src="./images/help-box.svg">Support</li>
+                <li class="nav-item"><img class="nav-image" src="./images/shield-check.svg">Privacy</li>
             </ul>
         </div>
     </nav>
@@ -66,111 +65,131 @@
         <div class="projects">
             <h2>Your Projects</h2>
             <div class="project-cards">
-                <div class="project-card">
+                <div class="project-card shadowed-item">
                     <p class="project-title">Super Cool Project</p>
                     <p class="project-content">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat,
                         id facilisis felis accumsan nec.</p>
                     <div class="project-card-actions">
-                        <input type="image" class="project-action project-action-favorite">
-                        <input type="image" class="project-action project-action-watch">
-                        <input type="image" class="project-action project-action-share">
+                        <input type="image" src="./images/star-plus-outline.svg"
+                            class="project-action project-action-favorite">
+                        <input type="image" src="./images/eye-plus-outline.svg"
+                            class="project-action project-action-watch">
+                        <input type="image" src="./images/source-fork.svg" class="project-action project-action-share">
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card shadowed-item">
                     <p class="project-title">Less Cool Project</p>
                     <p class="project-content">Nullam condimentum ipsum ut lectus vehucula consectetur. Quisque sed
                         dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in,
                         varius pellentesque lacus.</p>
                     <div class="project-card-actions">
-                        <input type="image" class="project-action project-action-favorite">
-                        <input type="image" class="project-action project-action-watch">
-                        <input type="image" class="project-action project-action-share">
+                        <input type="image" src="./images/star-plus-outline.svg"
+                            class="project-action project-action-favorite">
+                        <input type="image" src="./images/eye-plus-outline.svg"
+                            class="project-action project-action-watch">
+                        <input type="image" src="./images/source-fork.svg" class="project-action project-action-share">
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card shadowed-item">
                     <p class="project-title">Impossible App</p>
                     <p class="project-content">In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat
                         velit agittis id.</p>
                     <div class="project-card-actions">
-                        <input type="image" class="project-action project-action-favorite">
-                        <input type="image" class="project-action project-action-watch">
-                        <input type="image" class="project-action project-action-share">
+                        <input type="image" src="./images/star-plus-outline.svg"
+                            class="project-action project-action-favorite">
+                        <input type="image" src="./images/eye-plus-outline.svg"
+                            class="project-action project-action-watch">
+                        <input type="image" src="./images/source-fork.svg" class="project-action project-action-share">
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card shadowed-item">
                     <p class="project-title">Easy Peasy App</p>
                     <p class="project-content">Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget
                         accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
                     <div class="project-card-actions">
-                        <input type="image" class="project-action project-action-favorite">
-                        <input type="image" class="project-action project-action-watch">
-                        <input type="image" class="project-action project-action-share">
+                        <input type="image" src="./images/star-plus-outline.svg"
+                            class="project-action project-action-favorite">
+                        <input type="image" src="./images/eye-plus-outline.svg"
+                            class="project-action project-action-watch">
+                        <input type="image" src="./images/source-fork.svg" class="project-action project-action-share">
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card shadowed-item">
                     <p class="project-title">Ad Blocker</p>
                     <p class="project-content">Quisque eget rutrum nisl. Nam augue justo, cusus vitae metus vel,
                         pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
                     <div class="project-card-actions">
-                        <input type="image" class="project-action project-action-favorite">
-                        <input type="image" class="project-action project-action-watch">
-                        <input type="image" class="project-action project-action-share">
+                        <input type="image" src="./images/star-plus-outline.svg"
+                            class="project-action project-action-favorite">
+                        <input type="image" src="./images/eye-plus-outline.svg"
+                            class="project-action project-action-watch">
+                        <input type="image" src="./images/source-fork.svg" class="project-action project-action-share">
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card shadowed-item">
                     <p class="project-title">Money Maker</p>
                     <p class="project-content">Praesent convallis, libero quis congue elementum, nunc ante faucibus
                         sapien, ac clerisque tortor purus sit amet ex. Pellentesque mollis nec sem vel</p>
                     <div class="project-card-actions">
-                        <input type="image" class="project-action project-action-favorite">
-                        <input type="image" class="project-action project-action-watch">
-                        <input type="image" class="project-action project-action-share">
+                        <input type="image" src="./images/star-plus-outline.svg"
+                            class="project-action project-action-favorite">
+                        <input type="image" src="./images/eye-plus-outline.svg"
+                            class="project-action project-action-watch">
+                        <input type="image" src="./images/source-fork.svg" class="project-action project-action-share">
                     </div>
                 </div>
             </div>
         </div>
         <div class="announcements">
             <h2>Announcements</h2>
-            <div class="announcement-cards">
-                <div class="announcement-card">
-                    <p class="announcement-title">Site Maintenance</p>
-                    <p class="announcement-content">Vestibulum condimentum tellus lacus, in accumsan elit maximum ac.
+            <div class="side-cards shadowed-item">
+                <div class="side-card">
+                    <p class="side-card-title">Site Maintenance</p>
+                    <p class="side-card-content">Vestibulum condimentum tellus lacus, in accumsan elit maximum ac.
                         Donec henderit sodales congue...</p>
                 </div>
-                <div class="announcement-card">
-                    <p class="announcement-title">Community Share Day</p>
-                    <p class="announcement-content">Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam
+                <div class="side-card">
+                    <p class="side-card-title">Community Share Day</p>
+                    <p class="side-card-content">Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam
                         dictum accumsan porttitor...</p>
                 </div>
-                <div class="announcement-card">
-                    <p class="announcement-title">Updated Privacy Policy</p>
-                    <p class="announcement-content">Phasellus efficitur nisi eget elit consectetur, eget condimentum
+                <div class="side-card">
+                    <p class="side-card-title">Updated Privacy Policy</p>
+                    <p class="side-card-content">Phasellus efficitur nisi eget elit consectetur, eget condimentum
                         ante aucotr. Cras fringilla safittis sem in mattis...</p>
                 </div>
             </div>
         </div>
         <div class="trending">
             <h2>Trending</h2>
-            <div class="trending-cards">
-                <div class="trending-card">
-                    <img class="trending-icon">
-                    <p class="trending-user">@tegan</p>
-                    <p class="tending-app">World Peace Builder</p>
+            <div class="side-cards shadowed-item">
+                <div class="trending-card side-card">
+                    <img class="trending-icon" src="./images/user/265979670_213475760940655_6707997670240492532_n.jpg">
+                    <div class="side-card-content">
+                        <p class="side-card-title">@tegan</p>
+                        <p class="side-card-content">World Peace Builder</p>
+                    </div>
                 </div>
-                <div class="trending-card">
-                    <img class="trending-icon">
-                    <p class="trending-user">@morgan</p>
-                    <p class="tending-app">Super Cool Project</p>
+                <div class="trending-card side-card">
+                    <img class="trending-icon" src="./images/user/avatars-zUGIpyyW010rJFrc-rdl0PQ-t240x240.jpg">
+                    <div class="side-card-content">
+                        <p class="side-card-title">@morgan</p>
+                        <p class="side-card-content">Super Cool Project</p>
+                    </div>
                 </div>
-                <div class="trending-card">
-                    <img class="trending-icon">
-                    <p class="trending-user">@kendall</p>
-                    <p class="tending-app">Life Changing App</p>
+                <div class="trending-card side-card">
+                    <img class="trending-icon" src="./images/user/duck.jpg">
+                    <div class="side-card-content">
+                        <p class="side-card-title">@kendall</p>
+                        <p class="side-card-content">Life Changing App</p>
+                    </div>
                 </div>
-                <div class="trending-card">
-                    <img class="trending-icon">
-                    <p class="trending-user">@alex</p>
-                    <p class="tending-app">No Traffic Maker</p>
+                <div class="trending-card side-card">
+                    <img class="trending-icon" src="./images/user/random-animals-animals-8675984-377-442.jpg">
+                    <div class="side-card-content">
+                        <p class="side-card-title">@alex</p>
+                        <p class="side-card-content">No Traffic Maker</p>
+                    </div>
                 </div>
             </div>
         </div>
